@@ -13,10 +13,10 @@ consistant while a machine is powered up.
 What it does:
 1) The tool will take as input a file name placed on an NFS mounted filesystem:
    
-   1a) ./set_best_affinity.sh  /SASDATA/testfile
+   1a) ./set_best_affinity.sh  /nfs-mount-point/testfile
    
 
-2) The file /SASDATA/testfile is created 8GiB in size if it does not already exist
+2) The file /nfs-mount-point/testfile is created 8GiB in size if it does not already exist
 
 
 3) The tool will on its own identify the accelerated network interface through
