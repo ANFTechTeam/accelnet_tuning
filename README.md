@@ -12,6 +12,7 @@ consistant while a machine is powered up.
 
 What it does:
 1) The tool will take as input a file name placed on an NFS mounted filesystem:
+   
    1a) ./set_best_affinity.sh  /SASDATA/testfile
    
 
