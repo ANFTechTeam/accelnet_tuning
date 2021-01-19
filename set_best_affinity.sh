@@ -136,7 +136,7 @@ fi
 #		break
 #	fi
 #done
-local_ip=`ss -n | grep 2049 | awk '{print $5}' | cut -d: -f1 | sort | uniq`
+local_ip=`ss -n | grep :2049 | awk '{print $5}' | cut -d: -f1 | sort | uniq`
 local_nic=`ip a | grep -B 2 $local_ip | grep mtu | awk -F: '{print $2}' | awk '{print $1}'`
 interface=`ls /sys/class/net/${local_nic}/ | grep lower | cut -d_ -f2`
 
